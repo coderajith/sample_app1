@@ -1,0 +1,4 @@
+michael:
+  name: Ajith Kumar
+  email: ajithkumar2395.ak@gmail.com
+  password_digest: <%= User.digest('password') %>
