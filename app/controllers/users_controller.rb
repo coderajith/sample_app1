@@ -17,7 +17,11 @@ class UsersController < ApplicationController
     end
   end
 
+<<<<<<< HEAD
     private
+=======
+    privatePP
+>>>>>>> 4bf540b750b7193b58606d346f9b33e3bd4dee72
 
     def user_params
       params.require(:user).permit(:name, :email, :password,
