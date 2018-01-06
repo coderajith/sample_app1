@@ -1,7 +1,8 @@
 require 'test_helper'
 
 class UserMailerTest < ActionMailer::TestCase
-    test "account_activation" do
+
+  test "account_activation" do
     user = users(:michael)
     user.activation_token = User.new_token
     mail = UserMailer.account_activation(user)
@@ -20,5 +21,4 @@ class UserMailerTest < ActionMailer::TestCase
     assert_equal ["noreply@example.com"], mail.from
     assert_match "Hi", mail.body.encoded
   end
-
 end
