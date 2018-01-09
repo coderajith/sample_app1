@@ -1,4 +1,3 @@
-<% provide(:title, "Home") %>
 <% if logged_in? %>
   <div class="row">
     <aside class="col-md-4">
@@ -19,7 +18,7 @@
   </div>
 <% else %>
   <div class="center jumbotron">
-    <h1>Welcome to the Tweets App</h1>
+    <h1>Welcome to the Twitts App</h1>
 
     <%= link_to "Signup", signup_path, class: "btn btn-lg btn-primary" %>
     <%= link_to "Login", login_path, class: "btn btn-lg btn-primary" %>
